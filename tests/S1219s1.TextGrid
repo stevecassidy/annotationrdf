@@ -19,7 +19,7 @@ item []:
         intervals [2]:
             xmin = 0.665315039757821 
             xmax = 1.290899090683124 
-            text = "BASINETTE " 
+            text = "BASINETTE" 
         intervals [3]:
             xmin = 1.290899090683124 
             xmax = 2.043356009070295 
@@ -55,7 +55,7 @@ item []:
         intervals [2]:
             xmin = 0.665315039757821 
             xmax = 0.6828907462559111 
-            text = "  b" 
+            text = "b" 
         intervals [3]:
             xmin = 0.6828907462559111 
             xmax = 0.7830660341249255 
