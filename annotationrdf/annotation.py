@@ -115,20 +115,6 @@ class Annotation(DictMixin):
         else:
             return None
 
-    def grow(self, by):
-        self.end += by
-
-    def shrink(self, by):
-        self.end -= by
-
-    def forward(self, by):
-        self.start += by
-        self.end   += by
-
-    def backwards(self, by):
-        self.start -= by
-        self.end   -= by
-
     def to_rdf(self, g):
         """Add triples to this rdf graph to represent this
         annotation. Nodes go into the given namespace
@@ -165,6 +151,7 @@ class Annotation(DictMixin):
                 else:
                     prop = property_namespace[key]
                 
+                # if we have a singleton value, make it a list
                 if type(self[key]) != list:
                     values = [self[key]]
                 else:
